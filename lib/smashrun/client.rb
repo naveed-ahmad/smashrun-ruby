@@ -6,7 +6,7 @@ module Smashrun
     }
     
     def initialize(access_token)
-      client = OAuth2::Client.new(client_id, client_secret, OAUTH_URLS)
+      client = OAuth2::Client.new(Smashrun.client_id, Smashrun.client_secret, OAUTH_URLS)
       
       @token = OAuth2::AccessToken.new(client, access_token)
     end
