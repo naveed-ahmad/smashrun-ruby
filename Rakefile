@@ -13,8 +13,8 @@ require 'rake'
 require 'juwelier'
 Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "smashrun"
-  gem.homepage = "http://github.com/naveed-ahmad/-smashrun"
+  gem.name = "smashrun-ruby"
+  gem.homepage = "http://github.com/naveed-ahmad/smashrun"
   gem.license = "MIT"
   gem.summary = "Ruby gem for Smashrun api"
   gem.description = gem.summary
@@ -44,7 +44,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
   
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "smashrun #{version}"
+  rdoc.title = "smashrun-ruby #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
