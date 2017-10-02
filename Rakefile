@@ -10,21 +10,20 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 require 'rake'
-
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
+require 'juwelier'
+Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "smashrun"
-  gem.homepage = "http://github.com/naveed-ahmad/smashrun"
+  gem.homepage = "http://github.com/naveed-ahmad/-smashrun"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Ruby gem for Smashrun api"
+  gem.description = gem.summary
   gem.email = "naveedahmada036@gmail.com"
   gem.authors = ["Naveed Ahmad"]
+  
   # dependencies defined in Gemfile
 end
-Jeweler::RubygemsDotOrgTasks.new
-
+Juwelier::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
@@ -43,7 +42,7 @@ task :default => :test
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
+  
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "smashrun #{version}"
   rdoc.rdoc_files.include('README*')
