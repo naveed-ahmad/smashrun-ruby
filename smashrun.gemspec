@@ -21,11 +21,15 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/smashrun.rb",
+    "lib/smashrun/client.rb",
+    "lib/smashrun/configuration.rb",
+    "smashrun.gemspec",
     "test/helper.rb",
     "test/test_smashrun.rb"
   ]
