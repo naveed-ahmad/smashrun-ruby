@@ -67,7 +67,7 @@ module Smashrun
     
     protected
     def request(uri, params={})
-      Oj.load @token.get(uri, params).body
+      Oj.load @token.get(uri, params: params).body
     end
   end
 end
