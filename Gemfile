@@ -5,7 +5,7 @@ source "https://rubygems.org"
 
 source 'https://rubygems.org'
 gem 'oauth2', '~> 1.4.0'
-gem 'oj', '~> 3.3.5'
+gem 'oj', '~> 3.9.1'
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
