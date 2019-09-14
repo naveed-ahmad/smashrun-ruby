@@ -6,7 +6,7 @@
 
 Gem::Specification.new do |s|
   s.name = "smashrun-ruby"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_smashrun.rb"
   ]
-  s.homepage = "http://github.com/naveed-ahmad/smashrun"
+  s.homepage = "http://github.com/naveed-ahmad/smashrun-ruby"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.4.8"
   s.summary = "Ruby gem for Smashrun api"
@@ -47,14 +47,12 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<juwelier>, ["~> 2.1.0"])
-      s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
       s.add_dependency(%q<oauth2>, ["~> 1.4.0"])
       s.add_dependency(%q<oj>, ["~> 3.3.5"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<juwelier>, ["~> 2.1.0"])
-      s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
     s.add_dependency(%q<oauth2>, ["~> 1.4.0"])
@@ -62,7 +60,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<juwelier>, ["~> 2.1.0"])
-    s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
 
