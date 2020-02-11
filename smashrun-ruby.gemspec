@@ -44,20 +44,20 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<oauth2>.freeze, ["~> 1.4.0"])
-      s.add_runtime_dependency(%q<oj>.freeze, ["~> 3.9.1"])
+      s.add_runtime_dependency(%q<oj>.freeze, ["~> 3.10.2"])
       s.add_development_dependency(%q<rdoc>.freeze, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.0"])
       s.add_development_dependency(%q<juwelier>.freeze, ["~> 2.1.0"])
     else
       s.add_dependency(%q<oauth2>.freeze, ["~> 1.4.0"])
-      s.add_dependency(%q<oj>.freeze, ["~> 3.9.1"])
+      s.add_dependency(%q<oj>.freeze, ["~> 3.10.2"])
       s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
       s.add_dependency(%q<juwelier>.freeze, ["~> 2.1.0"])
     end
   else
     s.add_dependency(%q<oauth2>.freeze, ["~> 1.4.0"])
-    s.add_dependency(%q<oj>.freeze, ["~> 3.9.1"])
+    s.add_dependency(%q<oj>.freeze, ["~> 3.10.2"])
     s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
     s.add_dependency(%q<juwelier>.freeze, ["~> 2.1.0"])
