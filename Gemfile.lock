@@ -44,7 +44,7 @@ GEM
       rack (>= 1.2, < 3)
     oj (3.9.1)
     rack (2.0.8)
-    rake (12.1.0)
+    rake (13.0.1)
     rdoc (3.12.2)
       json (~> 1.4)
     semver (1.0.1)
